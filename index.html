@@ -4,9 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>JukeBox</title>
 </head>
 <body>
-    <h1>Hello</h1>
+    <div class="container">
+        <h1>Bollywood Jukebox</h1>
+        <h2>
+            Some of the Popular Songs of the Year 2022
+        </h2>
+        <iframe id="player" src="https://www.youtube.com/embed/BddP6PYo2gs?autoplay=1"  frameborder="0" width="480" height="240"></iframe>
+   
+
+        <div class="songs">
+            <button id="btn-1" onclick="playsong('BddP6PYo2gs')" class="playing">Kesariya</button>
+            <button id="btn-2" onclick="playsong('orYf6VDtj_k')" >Raataan Lambiyan</button>
+            <button id="btn-3" onclick="playsong('DB3D-mtWR0c')" >Ranjha</button>
+            <button id="btn-4" onclick="playsong('7fhakgay9Eg')" >Mann Bharryaa</button>
+            <button id="btn-5" onclick="playsong('tRScKDcYxlk')" >Jaikal Mahakal</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>
